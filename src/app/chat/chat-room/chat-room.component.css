@@ -1,0 +1,115 @@
+/* Center the content */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style the title */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Style the form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-bottom-color: #888;
+}
+
+button[type="submit"] {
+    background-color: #008CBA;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #005F6B;
+}
+
+/* Style the message list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+/* Align the logout link to the right */
+p {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+a {
+    color: #008CBA;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.messages {
+    max-height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    width: 80%;
+}
+
+p {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    /* center the content horizontally */
+    align-items: center;
+    /* center the content vertically */
+    width: 100%;
+}
+
+a {
+    color: #008CBA;
+    font-size: 2rem;
+    /* make the font bigger */
+}
+
+a:hover {
+    text-decoration: underline;
+}

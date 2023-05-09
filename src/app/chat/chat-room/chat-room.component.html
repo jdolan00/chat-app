@@ -1,0 +1,16 @@
+<div>
+  <h1>Chat Room</h1>
+  <form (submit)="sendMessage()">
+    <!-- Username input field removed as it's not needed anymore -->
+    <input [(ngModel)]="newMessage" name="message" type="text" placeholder="Type your message" [value]="username" required>
+    <button type="submit">Send</button>
+  </form>
+    <div>
+    <ul>
+      <li *ngFor="let message of messages">{{ message.username }}: {{ message.message }}</li>
+    </ul>
+  </div>
+  <p>
+    <a routerLink="/login" (click)="logout()">Logout</a>
+  </p>
+</div>
